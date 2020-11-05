@@ -1,5 +1,6 @@
 "use strict"
 
+// RETRIEVING VALUES FROM coffees VARIABLE
 function renderCoffee(coffee) {
     var html = '<tr class="coffee">';
     html += '<td>' + coffee.id + '</td>';
@@ -10,6 +11,7 @@ function renderCoffee(coffee) {
     return html;
 }
 
+// POPULATES TABLE DATA
 function renderCoffees(coffees) {
     var html = '';
     for(var i = coffees.length - 1; i >= 0; i--) {
@@ -18,6 +20,7 @@ function renderCoffees(coffees) {
     return html;
 }
 
+// FILTERS OPTIONS FORM SELECTIONS
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
@@ -31,6 +34,8 @@ function updateCoffees(e) {
 }
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
+
+// OBJECTS ARRAY
 var coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},
