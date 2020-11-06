@@ -16,18 +16,31 @@
             <option>dark</option>
         </select>
         <input id="submit" type="submit" />
+
+        <label for="coffee-selection"></label>
+        <input type="text" list="coffee-selection" name="coffee-selection">
+
+        <div class="container" id="coffees-list">
+            <h3>NAME<p>ROAST</p></h3>
+        </div>
+
+        <!--START FILTER LIST-->
+        <datalist id="coffee-selection">
+            <option value="">NAME</option>
+        </datalist>
+        <!--END FILTER LIST-->
     </form>
 
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>ROAST</th>
-            </tr>
-        </thead>
-        <tbody id="coffees"></tbody>
-    </table>
+<!--    <table>-->
+<!--        <thead>-->
+<!--            <tr>-->
+<!--                <th>ID</th>-->
+<!--                <th>NAME</th>-->
+<!--                <th>ROAST</th>-->
+<!--            </tr>-->
+<!--        </thead>-->
+<!--        <tbody id="coffees"></tbody>-->
+<!--    </table>-->
 
     <script src="main.js"></script>
 </body>
