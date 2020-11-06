@@ -2,14 +2,21 @@
 
 // RETRIEVING VALUES FROM coffees VARIABLE
 function renderCoffee(coffee) {
-    var html = '<tr class="coffee">';
-    html += '<td>' + coffee.id + '</td>';
-    html += '<td>' + coffee.name + '</td>';
-    html += '<td>' + coffee.roast + '</td>';
-    html += '</tr>';
+    // var html = '<options class="coffee">';
+    // html += '<options>' + coffee.id + '</options>';
+    var html = '<option value='+ coffee.name +'>';
+    // html += '<options>' + coffee.roast + '</options>';
+    // html += '</options>';
 
     return html;
 }
+
+function displayCoffee(coffee) {
+    var html = '<h3 value='+ coffee.name +'></h3>';
+
+    return html;
+}
+
 
 // POPULATES TABLE DATA
 function renderCoffees(coffees) {
@@ -56,7 +63,10 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
+var dataList = document.querySelector('#coffee-selection');
+var dataDisplay = document.querySelector('#coffees-list');
 
-tbody.innerHTML = renderCoffees(coffees);
+dataDisplay.innerHTML = renderCoffees(coffees);
+dataList.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
