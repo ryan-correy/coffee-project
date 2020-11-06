@@ -8,6 +8,10 @@
 <body>
     <h1>Coffee!</h1>
 
+    <div class="container">
+        <div id = "coffees-list"></div>
+    </div>
+
     <form>
         <label for="roast-selection"></label>
         <select id="roast-selection">
@@ -20,27 +24,13 @@
         <label for="coffee-selection"></label>
         <input type="text" list="coffee-selection" name="coffee-selection">
 
-        <div class="container" id="coffees-list">
-            <h3>NAME<p>ROAST</p></h3>
-        </div>
-
         <!--START FILTER LIST-->
         <datalist id="coffee-selection">
-            <option value="">NAME</option>
+            <option>NAME</option>
         </datalist>
         <!--END FILTER LIST-->
-    </form>
 
-<!--    <table>-->
-<!--        <thead>-->
-<!--            <tr>-->
-<!--                <th>ID</th>-->
-<!--                <th>NAME</th>-->
-<!--                <th>ROAST</th>-->
-<!--            </tr>-->
-<!--        </thead>-->
-<!--        <tbody id="coffees"></tbody>-->
-<!--    </table>-->
+    </form>
 
     <script src="main.js"></script>
 </body>
