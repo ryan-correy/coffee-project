@@ -2,48 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Shrikhand&family=Sonsie+One&family=Ultra&display=swap" rel="stylesheet">
+
+    <!--BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
 </head>
 <body>
-
-        <div class="jumbotron jumbotron-fluid container-fluid">
+        <!--START JUMBOTRON-->
+        <div class="jumbotron jumbotron-fluid container-fluid text-center d-none d-md-block">
             <div class="container">
-                <h1 class="display-4">Masters of the Blend!</h1>
+                <span>
+                    <img src="img/coffee-logo-white.png" alt="">
+                    <h1>Masters of the Blend</h1>
+                </span>
             </div>
         </div>
-    <div class="container container-fluid">
-
-
-        <h1>Coffee!</h1>
-
-        <div class="container">
-            <div id = "coffees-list"></div>
+        <div class="logo d-md-none text-center">
+            <img src="img/coffee-logo-brown.png" alt="">
         </div>
+        <!--END JUMBOTRON-->
+        <!--START MAIN-->
+        <div class="container main">
+            <br>
+            <h2 class="text-center">Coffee Menu</h2>
+            <br>
+            <hr>
+            <br>
+            <div class="row">
+                <!--START COFFEE MENU-->
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        <div class="col">
+                            <div id = "coffees-list">
 
-        <form>
-            <label for="roast-selection"></label>
-            <select id="roast-selection">
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
-            </select>
-            <input id="submit" type="submit" />
+                            </div>
+                        </div>
+                        <div class="col">
 
-            <label for="coffee-selection"></label>
-            <input type="text" list="coffee-selection" name="coffee-selection" id="search-filter">
-            <!--START FILTER LIST-->
-            <datalist id="coffee-selection">
-                <option>NAME</option>
-            </datalist>
-            <!--END FILTER LIST-->
+                        </div>
+                    </div>
+                </div>
+                <!--END COFFEE MENU-->
+                <!--START FORM-->
+                <div class="col-12 col-md-4">
+                    <form>
+                        <!--START ROAST DROPDOWN MENU-->
+                        <label for="roast-selection">Roast</label>
+                        <br>
+                        <select class="input" id="roast-selection">
+                            <option></option>
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                        <br>
+                        <br>
+                        <!--END ROAST DROPDOWN MENU-->
+                        <!--START COFFEE FILTER MENU-->
+                        <label for="coffee-selection">Coffee Name</label>
+                        <br>
+                        <input class="input" type="text" list="coffee-selection" name="coffee-selection" id="search-filter">
+                        <datalist id="coffee-selection">
+                            <option></option>
+                        </datalist>
+                        <br>
+                        <br>
+                        <input class="input" id="submit" type="submit"/>
+                        <!--START COFFEE FILTER MENU-->
+                    </form>
+                </div>
+            <!--END FORM-->
+            </div>
+        </div>
+        <!--END MAIN-->
 
-        </form>
 
-        <script src="main.js"></script>
-    </div>
+
+
+
+    <!--START JS-->
+   <script src="main.js"></script>
+   <!--BOOTSTRAP JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!--END BOOTSTRAP JS-->
+    <!--END JS-->
 </body>
 </html>

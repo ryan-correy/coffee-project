@@ -1,14 +1,48 @@
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+html {
+    box-sizing: border-box;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+.main {
+    color: #60483E;
 }
 
-#coffees-list{
-    width: 5em;
-    height: 50em;
+/*START HEADER*/
+.jumbotron {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("img/cup-o-joe.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    color: #FFFFFF;
 }
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+}
+
+h2 {
+    color: #6b6b6b;
+    font-size: 3em;
+    font-family: 'Sonsie One', cursive;
+}
+/*END HEADER*/
+
+/*START MAIN*/
+.logo {
+    padding-top: 25px;
+}
+/*END MAIN*/
+
+/*START FORM*/
+.input {
+    height: 2em;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #969696;
+}
+
+#submit {
+    background-color: #60483E;
+    color: #FFFFFF;
+    font-family: 'Alfa Slab One', cursive;
+}
+/*END FORM*/
