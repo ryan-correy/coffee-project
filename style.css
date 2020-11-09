@@ -40,7 +40,7 @@ h2 {
     border: 1px solid #969696;
 }
 
-#submit {
+.submit {
     background-color: #60483E;
     color: #FFFFFF;
     font-family: 'Alfa Slab One', cursive;
