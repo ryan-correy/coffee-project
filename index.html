@@ -55,7 +55,6 @@
                         <label for="roast-selection">Roast</label>
                         <br>
                         <select class="input" id="roast-selection">
-                            <option></option>
                             <option>light</option>
                             <option>medium</option>
                             <option>dark</option>
@@ -72,11 +71,41 @@
                         </datalist>
                         <br>
                         <br>
-                        <input class="input" id="submit" type="submit"/>
+                        <input class="input submit" id="submit" type="submit"/>
+
                         <!--START COFFEE FILTER MENU-->
                     </form>
+                    <!--END FORM-->
+                    <br>
+                    <h2>Add a Coffee</h2>
+                    <br>
+                    <!--START SECOND FORM-->
+                    <form>
+                        <!--START ROAST DROPDOWN MENU-->
+                        <label for="add-roast">Roast</label>
+                        <br>
+                        <select class="input" id="add-roast">
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                        <br>
+                        <br>
+                        <!--END ROAST DROPDOWN MENU-->
+                        <!--START COFFEE FILTER MENU-->
+                        <label for="add-coffee">Coffee Name</label>
+                        <br>
+                        <input class="input" type="text" name="add-coffee" id="add-coffee">
+                        <br>
+                        <br>
+                        <input class="input submit" id="submit-coffee" type="submit"/>
+                    </form>
+                <!--END SECOND FORM-->
                 </div>
-            <!--END FORM-->
+
+
+
+
             </div>
         </div>
         <!--END MAIN-->
