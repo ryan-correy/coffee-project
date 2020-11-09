@@ -38,14 +38,13 @@ function updateCoffees(e) {
 }
 
 // ADD ITEMS TO THE ARRAY
-// form needs a new event listener
-// add id
 function addNewCoffee (input) {
     var newCoffeeObj ={
-        id: coffees.length+1,
+        id: coffees.length + 1,
         name: addCoffee.value,
         roast: addRoast.value
     }
+    console.log(newCoffeeObj);
     coffees.push(newCoffeeObj);
 }
 
@@ -71,7 +70,7 @@ var coffees = [
 ];
 
 // var tbody = document.querySelector('#coffees');
-var submitButton = document.querySelector('#submit');
+// var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var coffeeSelection = document.querySelector('#coffee-selection');
 var coffeeMenu = document.querySelector('#coffees-list');
@@ -86,4 +85,9 @@ coffeeSelection.innerHTML = renderCoffees(coffees, true);
 
 coffeeInput.addEventListener('keyup', updateCoffees);
 roastSelection.addEventListener('change', updateCoffees);
-submitNewCoffee.addEventListener('click', addNewCoffee);
+submitNewCoffee.addEventListener('click', function (event){
+    event.preventDefault();
+    addNewCoffee();
+    coffeeMenu.innerHTML = renderCoffees(coffees, false);
+
+});
